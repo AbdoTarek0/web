@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup2.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Free palastine</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input id="A" type="text" required>
+                    <label for="A">User Name</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="b" type="email" required>
+                    <label for="b">Email</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="c" type="password" required>
+                    <label for="c">Password</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="d" type="password" required>
+                    <label for="d">Confirm Password</label>
+                </div>
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+                
+            </div>
+            <button class="btn" type="button"><a style="text-decoration: none;color: rgb(0, 0, 0);" onclick="Signup()" >Register</a></button>
+            <div class="register">
+                <p for="forget">If you have an account <a id="forget" href="login.html">login</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+
+        function Signup() {
+            var username = document.getElementById('A').value;
+            var email = document.getElementById('b').value;
+            var password = document.getElementById('c').value;
+            var confirmPassword = document.getElementById('d').value;
+
+            if (username.trim() !== "" && email.trim() !== "" && password.trim() !== "" && confirmPassword.trim() !== "") {
+
+                window.location.href = 'homepage.html';
+            } else {
+                alert('Please enter your information.');
+            }
+        }
+    </script>
+</body>
+
+</html>

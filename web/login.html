@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <title>Free palastine</title>
+
+</head>
+
+<section>
+    <form>
+
+        <h1>Login</h1>
+
+        <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+        </div>
+        <div class="forget">
+            <label for=""><input type="checkbox">Remember Me!</label>
+            <a href="forget.html">Forgot your password?</a>
+        </div>
+        <button type="button" onclick="login()">Login</button>
+        <div class="register">
+            <p>If you don't have an account <a href="signup2.html">register</a></p>
+        </div>
+    </form>
+</section>
+
+<body>
+</body>
+
+<script>
+    function login() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (email.trim() !== "" && password.trim() !== "") {
+            window.location.href = 'homepage.html';
+        } else {
+            alert('Please enter your email and password.');
+        }
+    }
+</script>
+
+</html>

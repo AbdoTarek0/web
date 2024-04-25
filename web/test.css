@@ -1,0 +1,203 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 100px ;
+    overflow: hidden;
+
+}
+.item{
+    flex: 1;
+    height: 100%;
+    
+
+}
+.item:nth-child(1){
+    background-image: url("pep.webp");
+}
+.item:nth-child(2){
+    background-image: url("Res.webp");
+}
+.item:nth-child(3){
+    background-image: url("cho.webp");
+}
+.item:nth-child(4){
+    background-image: url("القضيه.jpg");
+}
+.item{
+    background-position: center;
+    background-size: cover;
+    transition: flex 0.8s ease;
+}
+.item:hover{
+    flex: 5;
+
+}
+
+.bt h1{
+    /* left: -50vw; */
+    display: flex;
+    color: #ffffff;
+    justify-content: left;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.container {
+    position: relative; 
+    display: flex;
+    justify-content: right; 
+    overflow: hidden;
+    align-items: center; 
+    padding: 32px;
+    background: #333; 
+}
+
+.container .btn {
+    display: flex;
+    overflow: hidden;
+    position: relative; 
+    background: rgba(255, 255, 255, .05); 
+    padding: 10px 50px; 
+    border-radius: 30px; 
+    left: 30px;
+    transition: 0.5s; 
+    overflow: hidden; 
+}
+
+.container .btn a {
+    display: flex;
+    position: relative;
+    text-decoration: none; 
+    color: white; 
+    font-weight: 400; 
+    letter-spacing: 1px;
+    backdrop-filter: blur(15px); 
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.container .btn:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
+.container .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left,rgba(255,255,255,.15),transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+}
+.container .btn:hover a::before {
+  
+    transform: skewX(45deg) translate(200px);
+    
+}
+
+.container .btn::before, 
+.container .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    background: #f00;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+transition-delay: .5;
+}
+
+.container .btn::before {
+    bottom: -5px; 
+    background: #f00; 
+    width: 30px; 
+    height: 10px; 
+}
+
+.container .btn:hover::before {
+    bottom: 0; 
+    width: 80%;
+    height: 50%; 
+    border-radius: 30px;
+}
+
+.container .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    background: #f00;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    transition-delay: .5;
+}
+
+.container .btn:hover::after {
+    top: 0;
+    width: 80%; 
+    height: 50%; 
+    border-radius: 30px; 
+}
+
+.container .btn:nth-child(2)::before, 
+.container .btn:nth-child(2)::after {
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71  , 0 0 15px #ff1f71 , 0 0 30px #ff1f71 , 0 0 60px #ff1f71 ;
+}
+
+.container .btn:nth-child(3)::before, 
+.container .btn:nth-child(3)::after {
+    background: #2db2ff;
+    box-shadow: 0 0 5px #2db2ff , 0 0 15px #2db2ff, 0 0 30px #2db2ff, 0 0 60px #2db2ff;
+}
+
+.container .btn:nth-child(4)::before, 
+.container .btn:nth-child(4)::after {
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45 , 0 0 15px #1eff45, 0 0 30px #1eff45, 0 0 60px #1eff45;
+}
+.container .btn:nth-child(5)::before, 
+.container .btn:nth-child(5)::after {
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45 , 0 0 15px #1eff45, 0 0 30px #1eff45, 0 0 60px #1eff45;
+}
+
+.footer {
+    text-align: center;  
+    background: #333;   
+    color: #fff;       
+    padding: 20px;    
+    position: fixed; 
+    width: 100%;
+    bottom: 0;          
+}
+.header{
+    text-align: center;  
+    background: #333;   
+    color: #fff;       
+    position: fixed; 
+    width: 100%;
+    top: 0;  
+}
