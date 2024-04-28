@@ -81,7 +81,6 @@ span {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -100,6 +99,7 @@ footer {
     text-align: center;
     padding: 20px;
     position: relative;
+    width: 100%;
 }
 
 footer::before {
@@ -109,11 +109,10 @@ footer::before {
     width: 100%;
     background: #fff;
     left: 0;
-    top: 100px;
+    top: 110px;
 }
 
 footer .content {
-    max-width: 1250px;
     margin: auto;
     padding: 30px 40px 40px;
 }
@@ -131,6 +130,12 @@ footer .content .logo-details {
     display: flex;
     position: relative;
     top: -10px;
+}
+
+footer .content .logo-details .logo_name {
+    position: relative;
+    left: 10px;
+    top: 8px;
 }
 
 footer .content .media-icons {
@@ -229,6 +234,10 @@ footer .content .link-boxes .box .link-name::before {
     content: "";
     position: absolute;
     background: #fff;
+    height: 2px;
+    width: 35px;
+    bottom: -2px;
+    left: 150px;
 }
 
 footer .content .link-boxes .box li {
@@ -283,6 +292,7 @@ footer .content .link-boxes .input-box input[type="button"] {
     opacity: .8;
     transition: all .4s ease;
     cursor: pointer;
+    width: 100%;
 }
 
 footer .content .link-boxes .input-box input[type="button"]:hover {
@@ -295,6 +305,8 @@ footer .bottom-details .bottom-text {
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    right: 100px;
 }
 
 footer .bottom-details .bottom-text span,

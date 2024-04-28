@@ -9,7 +9,6 @@
     right: 0px;
 } */
     
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
     .navbar {
         background-color: rgb(49, 45, 45);
         overflow: visible;
@@ -40,7 +39,7 @@
         padding: 14px 16px;
         text-decoration: none;
         transition: all 0.5s ease-in-out;
-        bottom: 45px;
+        bottom: 30px;
         position: relative;
     }
     
@@ -153,6 +152,7 @@
         text-align: center;
         padding: 20px;
         position: relative;
+        width: 100%;
     }
     
     footer::before {
@@ -162,13 +162,12 @@
         width: 100%;
         background: #fff;
         left: 0;
-        top: 100px;
+        top: 110px;
     }
     
     footer .content {
-        max-width: 1250px;
         margin: auto;
-        padding: 30px 40px 40px;
+        padding: 30px 60px 40px;
     }
     
     footer .content .top {
@@ -184,6 +183,12 @@
         display: flex;
         position: relative;
         top: -10px;
+    }
+    
+    footer .content .logo-details .logo_name {
+        position: relative;
+        left: 10px;
+        top: 8px;
     }
     
     footer .content .media-icons {
@@ -282,12 +287,16 @@
         content: "";
         position: absolute;
         background: #fff;
+        height: 2px;
+        width: 35px;
+        bottom: -2px;
+        left: 150px;
     }
     
     footer .content .link-boxes .box li {
         list-style: none;
         text-decoration: none;
-        margin: 6px 0;
+        margin: 6px -10px;
     }
     
     footer .content .link-boxes .box li a {
@@ -348,6 +357,8 @@
         padding: 20px 40px;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        right: 100px;
     }
     
     footer .bottom-details .bottom-text span,
