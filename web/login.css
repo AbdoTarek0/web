@@ -16,8 +16,14 @@ body {
     background-size: cover;
 }
 
-section {
-    position: relative;
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.main {
+    /* position: relative; */
     max-width: 800px;
     background-color: transparent;
     border: 2px solid rgba(44, 42, 42, 0.5);
@@ -30,7 +36,11 @@ section {
     width: 480px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 1);
     left: 280px;
+    margin-right: 50px;
 }
+
+
+
 
 .inputbox input {
     width: 350px;
